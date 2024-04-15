@@ -36,7 +36,7 @@ export default function SignUpForm() {
                         <div className="flex flex-col space-y-1.5">
                             <h2 className="text-sm font-medium">Perfil</h2>
                             <Select>
-                                <SelectTrigger className="w-[250px]">
+                                <SelectTrigger className="flex space-y-1.5">
                                     <SelectValue placeholder="Selecione o Perfil" />
                                 </SelectTrigger>
                                 <SelectContent>
