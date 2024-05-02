@@ -1,4 +1,3 @@
-
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -6,8 +5,8 @@ import Link from "next/link";
 import { Label } from "@/components/ui/label";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from "@/components/ui/select";
 
-
 export default function SignUpForm() {
+
     return (
         <Card className="w-[500px]">
             <CardHeader>
@@ -23,7 +22,7 @@ export default function SignUpForm() {
                         </div>
                         <div className="flex flex-col space-y-1.5">
                             <Label htmlFor="email">E-mail</Label>
-                            <Input id="email" name="name" type="email" required />
+                            <Input id="email" name="email" type="email" required />
                         </div>
                         <div className="flex flex-col space-y-1.5">
                             <Label htmlFor="password">Senha</Label>
@@ -31,19 +30,19 @@ export default function SignUpForm() {
                         </div>
                         <div className="flex flex-col space-y-1.5">
                             <Label htmlFor="password">Confirmar Senha</Label>
-                            <Input id="password" name="password" type="password" required />
+                            <Input id="password" name="password2" type="password" required />
                         </div>
                         <div className="flex flex-col space-y-1.5">
                             <h2 className="text-sm font-medium">Perfil</h2>
-                            <Select>
+                            <Select name='typeUser'>
                                 <SelectTrigger className="w-[250px]">
                                     <SelectValue placeholder="Selecione o Perfil" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
                                         <SelectLabel></SelectLabel>
-                                        <SelectItem value="profi">Profissional</SelectItem>
-                                        <SelectItem value="pineapple">Usuário</SelectItem>
+                                        <SelectItem value="professional">Profissional</SelectItem>
+                                        <SelectItem value="user">Usuário</SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>
